@@ -4,7 +4,7 @@ body {
 .businessCard{
     margin: auto;
     /* width: 33%; */
-    height: auto;
+    height: fit-content;
     border: 3px solid black;
     padding: 10px;
     object-fit: scale-down;
