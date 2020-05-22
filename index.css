@@ -3,11 +3,11 @@ body {
 }
 .businessCard{
     margin: auto;
-    /* width: 33%; */
+    width: 100vw;
     max-height: 100%;
     border: 3px solid black;
     padding: 10px;
-    /* font-size: 1.2vw; */
+    font-size: 3vw;
     overflow: hidden;
     /* column-count: 2;
     column-fill: balance; */
@@ -19,7 +19,7 @@ body {
 }
 .category{
     font-weight: bold;
-    width: 10%;
+    width: 15vw;
     display: inline-block;
     /* margin-right: 10px; */
 }
@@ -31,6 +31,8 @@ body {
     /* max-height: 100%; */
     margin-right: 10px;
     object-fit: scale-down;
+    max-width: 20%;
+    width: 20vw;
     display: block;
     float:left;
 }
