@@ -4,10 +4,11 @@ body {
 .businessCard{
     margin: auto;
     /* width: 33%; */
-    height: fit-content;
+    max-height: 100%;
     border: 3px solid black;
     padding: 10px;
-    object-fit: scale-down;
+    font-size: 1.2vw;
+    overflow: hidden;
     /* column-count: 2;
     column-fill: balance; */
 }
@@ -18,20 +19,20 @@ body {
 }
 .category{
     font-weight: bold;
-    width: 100px;
+    width: 10%;
     display: inline-block;
-    object-fit: scale-down;
     /* margin-right: 10px; */
 }
 .value{
     display: inline;
-    object-fit: scale-down;
 }
 .headshot{
-    float: left;
-    max-height: 100%;
-    object-fit: scale-down;
+    /* display: inline-block; */
+    /* max-height: 100%; */
     margin-right: 10px;
+    object-fit: scale-down;
+    display: block;
+    float:left;
 }
 .infoList{
     margin-left: 10px;
