@@ -3,10 +3,10 @@ body {
 }
 .businessCard{
     margin: auto;
-    width: 100vw;
-    max-height: 100%;
+    width: 90vw;
+    /* max-height: 100%; */
     border: 3px solid black;
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 3vw;
     overflow: hidden;
     /* column-count: 2;
@@ -28,8 +28,8 @@ body {
 }
 .headshot{
     /* display: inline-block; */
-    /* max-height: 100%; */
-    margin-right: 10px;
+    height: 100%;
+    margin: 1vh;
     object-fit: scale-down;
     max-width: 20%;
     width: 20vw;
