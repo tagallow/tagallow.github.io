@@ -15,7 +15,6 @@ body {
 .name{
     text-align: center;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .category{
     font-weight: bold;
@@ -26,18 +25,24 @@ body {
 .value{
     display: inline;
 }
-.headshot{
-    /* display: inline-block; */
+.headshotSpan {
     height: 100%;
-    margin: 1vh;
-    object-fit: scale-down;
-    max-width: 20%;
+    margin: .5vh;
     width: 20vw;
     display: block;
     float:left;
+    
+}
+.headshot{
+    /* display: inline-block; */
+    object-fit: scale-down;
+    overflow: hidden;
+    width: inherit;
+    margin: auto;
 }
 .infoList{
-    margin-left: 10px;
+    margin: .5vh;
+    vertical-align: middle;
 }
 /* ----------- Google Pixel ----------- */
 
