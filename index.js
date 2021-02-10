@@ -1,5 +1,6 @@
 $(function () {
-    var links = [{
+    var links = [
+        {
             name: "JRR Tolkien's The Hobbit DEC 2015 FINAL.mp4",
             hash: "f4799d3bc7f1d69b45789f8eed1386f8541e544a"
         },
@@ -15,7 +16,27 @@ $(function () {
             name: "2021-01-11-raspios-buster-armhf-lite.zip",
             hash: "ec7a402ff515d80f30f6244847b672ae9fbe5d7a"
         },
+        {
+            name: "Best of the Worst - Diamond Cobra vs. The White Fox-eEKKVSjw6JY.mkv",
+            hash: "4795102b94b5190c30bada9a42694069ed6441d1"
+        },
+        {
+            name: "Hello Internet",
+            hash: "e76089e1de9c6cc836d033ec1761d6d620b6e2e2"
+        },
+
+        // {
+        //     name: "",
+        //     hash: ""
+        // },
     ]
+    links.sort((a, b) => {
+        if (a.name > b.name)
+            return 1;
+        if (a.name < b.name)
+            return -1;
+        return 0;
+    });
     buildTable(links);
 });
 
