@@ -24,11 +24,26 @@ $(function () {
             name: "Hello Internet",
             hash: "e76089e1de9c6cc836d033ec1761d6d620b6e2e2"
         },
-
-        // {
-        //     name: "",
-        //     hash: ""
-        // },
+        {
+            name: "What.CD_Goodbye_Release",
+            hash: "92cabe1f8b3a09fca44561b639ad6039163a4e53"
+        },
+        {
+            name: "Mars Argo Torrent V3",
+            hash: "d240f59ee4aa3a272f0c7c93b2798c9c111e29bf"
+        },
+        {
+            name: "Star Wars The Original Trilogy 1977-1983 Despecialized Editions 720p x264 AC3 5.1",
+            hash: "8b42d73d1e6e74db4ad5df70f35a99df65b94e94"
+        },
+        {
+            name: "Doom-2",
+            hash: "586d031fcc08575b98dca12a2e1c1e4f6fc8e411"
+        },
+        {
+            name: "HowToToothpaste_ViHart.mp4",
+            hash: "5307ebbaf5d444a9d961868a2aa601822760fbea"
+        },
     ]
     links.sort((a, b) => {
         if (a.name > b.name)
