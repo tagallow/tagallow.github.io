@@ -27,28 +27,31 @@ function parseMagnetLink(link) {
         magnetObject.name = link;
     else {
         magnetObject.name = link.substring(0, link.indexOf("&tr="));
-        link = link.substr(magnetObject.name.length + "&tr=".length)
+        link = link.substr(magnetObject.name.length);
         console.log(link);
-        magnetObject.trackers.push(link);
-        // while (link.indexOf("&tr=") > 0) {
-        //     var tracker = magnetObject.name = link.substring(0, link.indexOf("&tr="));
-        // }
+        //magnetObject.trackers.push(link);
+        //this almost works.....
+        while (link.indexOf("&tr=") > 0) {
+            var tracker = magnetObject.name = link.substring(0, link.indexOf("&tr="));
+            magnetObject.trackers.push(tracker);
+            link = link.substr(tracker.length + "&tr=".length)
+        }
     }
     return magnetObject;
     //2021-01-11-raspios-buster-armhf-lite.zip&tr=http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce
 };
 function buildTable(magnetObject) {
     $("#magTable").html("");
-    $("#magTable").append("<tr><td colspan='2' style='font-size: small'>" + magnetObject.original + "</td></tr>")
-    $("#magTable").append("<tr><td>Name</td><td>" + magnetObject.name + "</td></tr>");
-    $("#magTable").append("<tr><td>Hash</td><td style='font-family: monospace'>" + magnetObject.hash + "</td></tr>");
-    $("#magTable").append("<tr>");
-    $("#magTable").append("<td>Trackers</td>");
-    $("#magTable").append("<td>");
+    $("#magTable").append("<p style='font-size: small'>" + magnetObject.original + "</p>")
+    $("#magTable").append("<p>Name:" + magnetObject.name + "</p>");
+    $("#magTable").append("<p>Hash:" + "<font style='font-family: monospace'>"+magnetObject.hash + " </font></p>");
+    $("#magTable").append("<p>Trackers</p>");
+    var trackerList = "<ul style='list-style: none;'>";
     $.each(magnetObject.trackers, function (index, value) {
-        $("#magTable ").append(decodeURIComponent(value)+"<br>");
+        trackerList += "<li>" + decodeURIComponent(value) + "</li>";
     });
-    $("#magTable").append("</td></tr>");
+    trackerList += "</ul>"
+    $("#magTable").append(trackerList);
     // $("#result").append("<h3>trackers</h3><br>");
 
 };
