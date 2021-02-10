@@ -44,6 +44,18 @@ body {
     margin: .5vh;
     vertical-align: middle;
 }
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+td{
+    padding: 5px;
+}
+a{
+    text-decoration: none;
+}
 /* ----------- Google Pixel ----------- */
 
 /* Portrait and Landscape */
