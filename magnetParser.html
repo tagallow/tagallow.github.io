@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>magnet parser</title>
+    <link rel="stylesheet" href="styles/site.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts\magnetParser.js"></script>
+</head>
+
+<body>
+    <h2>magnet parser</h3>
+    Magnet URI: <input type="text" id="magnetInput"
+        value="magnet:?xt=urn:btih:ec7a402ff515d80f30f6244847b672ae9fbe5d7a&dn=2021-01-11-raspios-buster-armhf-lite.zip&tr=http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce">
+    <input type="button" onclick="runParse()" value="Parse">
+    <br>
+
+    <table>
+        <tbody id="magTable">
+        </tbody>
+    </table>
+</body>
+</html>

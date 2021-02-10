@@ -57,15 +57,15 @@ $(function () {
 
 function getUri(hash,name) {
     var magnet = "magnet:?xt=urn:btih:" + hash + "&dn=" + encodeURIComponent(name);
-    console.log(magnet);
     return magnet;
 };
 function buildTable(links) {
     $.each(links, function (index, value) {
         $("#magTable").append("<tr>")
         $("#magTable").append("<td>" + value.name + "</td>")
-        $("#magTable").append("<td>" + value.hash + "</td>")
+        $("#magTable").append("<td style='font-family: monospace'>" + value.hash + "</td>")
         $("#magTable").append("<td><a href=" + getUri(value.hash, value.name) + "> &#x1F9F2 </a></td>");
         $("#magTable").append("</tr>")
     })
 };
+
