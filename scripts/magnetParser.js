@@ -28,13 +28,19 @@ function parseMagnetLink(link) {
     else {
         magnetObject.name = link.substring(0, link.indexOf("&tr="));
         link = link.substr(magnetObject.name.length);
+        //&tr=http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce
+        while (link.indexOf("&tr=") >= 0) {
+            //there is at least 1 tracker
+            link = link.substr("&tr=".length);
+            //http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce
+            if (link.indexOf("&tr=") <= 0)
+                magnetObject.trackers.push(link);
+            else {
+                var finaluri = link.substring(0, link.indexOf("&tr="))
+                magnetObject.trackers.push(finaluri);
+                link = link.substring(finaluri.length);
+            }
         console.log(link);
-        //magnetObject.trackers.push(link);
-        //this almost works.....
-        while (link.indexOf("&tr=") > 0) {
-            var tracker = magnetObject.name = link.substring(0, link.indexOf("&tr="));
-            magnetObject.trackers.push(tracker);
-            link = link.substr(tracker.length + "&tr=".length)
         }
     }
     return magnetObject;
