@@ -44,6 +44,14 @@ $(function () {
             name: "HowToToothpaste_ViHart.mp4",
             hash: "5307ebbaf5d444a9d961868a2aa601822760fbea"
         },
+        {
+            name: "SoundBraid_ViHart.mp4",
+            hash: "269e1e4a6fece9db8295e67634b209cce3d0eb76"
+        },
+        {
+            name: "Vi_Hart_Guide_To_Comments.mp4",
+            hash: "6b9e1fca4985f15bbae75d852e56419006b341af"
+        }
     ]
     links.sort((a, b) => {
         if (a.name > b.name)
