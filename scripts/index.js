@@ -51,7 +51,11 @@ $(function () {
         {
             name: "Vi_Hart_Guide_To_Comments.mp4",
             hash: "6b9e1fca4985f15bbae75d852e56419006b341af"
-        }
+        },
+        {
+            name: "linuxmint-20.1-cinnamon-64bit.iso",
+            hash: "8df6e26142615621983763b729f640372cf1fc34"
+        },
     ]
     links.sort((a, b) => {
         if (a.name > b.name)
