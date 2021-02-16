@@ -49,8 +49,8 @@ function parseMagnetLink(link) {
 function buildTable(magnetObject) {
     $("#magTable").html("");
     $("#magTable").append("<p style='font-size: small'>" + magnetObject.original + "</p>")
-    $("#magTable").append("<p>Name:" + magnetObject.name + "</p>");
-    $("#magTable").append("<p>Hash:" + "<font style='font-family: monospace'>"+magnetObject.hash + " </font></p>");
+    $("#magTable").append("<p>Name: " + decodeURIComponent(magnetObject.name) + "</p>");
+    $("#magTable").append("<p>Hash: " + "<font style='font-family: monospace'>" + magnetObject.hash + "</font></p>");
     $("#magTable").append("<p>Trackers</p>");
     var trackerList = "<ul style='list-style: none;'>";
     $.each(magnetObject.trackers, function (index, value) {
