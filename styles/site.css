@@ -61,6 +61,10 @@ table td {
     padding: .5em;
     border: 1px solid lightgrey;
 }
+@font-face {
+    font-family: Bookery;
+    src: url(Bookerly-Regular.ttf);
+}
 
 a{
     text-decoration: none;
