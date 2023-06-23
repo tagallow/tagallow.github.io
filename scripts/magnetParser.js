@@ -1,8 +1,3 @@
-$(function () {
-    //var magnetObject = parseMagnetLink("magnet:?xt=urn:btih:ec7a402ff515d80f30f6244847b672ae9fbe5d7a&dn=2021-01-11-raspios-buster-armhf-lite.zip&tr=http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce");
-    //buildTable(magnetObject);
-});
-
 function runParse() {
     var link = $("#magnetInput").val();
     buildTable(parseMagnetLink(link));
@@ -12,7 +7,7 @@ function getUri(hash,name) {
     var magnet = "magnet:?xt=urn:btih:" + hash + "&dn=" + encodeURIComponent(name);
     return magnet;
 };
-
+// parse a magnet link and return an object
 function parseMagnetLink(link) {
     var magnetObject = {
         original: link,
@@ -46,6 +41,7 @@ function parseMagnetLink(link) {
     return magnetObject;
     //2021-01-11-raspios-buster-armhf-lite.zip&tr=http%3a%2f%2ftracker.raspberrypi.org%3a6969%2fannounce
 };
+// build a table from the magnet object
 function buildTable(magnetObject) {
     $("#magTable").html("");
     $("#magTable").append("<p style='font-size: small'>" + magnetObject.original + "</p>")
