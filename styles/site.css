@@ -3,86 +3,19 @@ body {
     color: #ccc;
     background-color: #222
 }
-.businessCard{
-    margin: auto;
-    width: 90vw;
-    /* max-height: 100%; */
-    border: 3px solid black;
-    /* padding: 10px; */
-    font-size: 3vw;
-    overflow: hidden;
-    /* column-count: 2;
-    column-fill: balance; */
-}
-.name{
-    text-align: center;
-    font-weight: bold;
-}
-.category{
-    font-weight: bold;
-    width: 15vw;
-    display: inline-block;
-    /* margin-right: 10px; */
-}
-.value{
-    display: inline;
-}
-.headshotSpan {
-    height: 100%;
-    margin: .5vh;
-    width: 20vw;
-    display: block;
-    float:left;
-    
-}
-.headshot{
-    /* display: inline-block; */
-    object-fit: scale-down;
-    overflow: hidden;
-    width: inherit;
-    margin: auto;
-}
-.infoList{
-    margin: .5vh;
-    vertical-align: middle;
-}
 table {
     border: 1px solid grey;
     font-size: 12pt;
     border-collapse: collapse;
 }
-
 table caption {
     padding: .5em;
 }
-
 table th,
 table td {
     padding: .5em;
     border: 1px solid lightgrey;
 }
-
 a{
     text-decoration: none;
 }
-/* ----------- Google Pixel ----------- */
-
-/* Portrait and Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {}
-
-/* Portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {}
-
-/* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {}
-
-/* ----------- Google Pixel XL ----------- */
-
-/* Portrait and Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {}
-
-/* Portrait */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {}
-
-/* Landscape */
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: landscape) {}

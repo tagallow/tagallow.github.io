@@ -56,10 +56,6 @@ $(function () {
             name: "linuxmint-20.1-cinnamon-64bit.iso",
             hash: "8df6e26142615621983763b729f640372cf1fc34"
         },
-        {
-            name: "Alcoholics Anonymous, Fourth Edition",
-            hash: "745333f8b2f83b15bfc92ec3465f172f2c8cc4f2"
-        },
     ]
     links.sort((a, b) => {
         if (a.name > b.name)
