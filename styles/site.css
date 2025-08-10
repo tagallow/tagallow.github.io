@@ -27,7 +27,7 @@ a{
 }
 
 .header, .footer {
-    background: #222;
+    /* background: #222; */
     padding: 20px;
     text-align: center;
 }

@@ -1,3 +1,3 @@
-# tagallow.com aka tagallow.github.io
+# tagallow.com or tagallow.github.io
 
 Resume and personal projects
