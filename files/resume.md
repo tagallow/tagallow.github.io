@@ -7,11 +7,11 @@
 - Extensive SQL development
 - Maintained .NET applications
 - Worked with Infor Lawson
-    - Wrote LID jobs
+  - Wrote LID jobs
 - Wrote Crystal Reports
 - Extensive use of, and training with, Workday
-    - Writing reports for HR, supply chain, and finance
-    - Maintaining business processes
+  - Writing reports for HR, supply chain, and finance
+  - Maintaining business processes
 
 **Software Developer** | Growmark (February 2019 – August 2020)
 
@@ -47,7 +47,7 @@
 - Experience with JAVA, Python, and Crystal Reports
 - Proficient at Linux server administration and maintenance
 
-## Education 
+## Education
 
 - Illinois State University, Normal IL (2008 - 2012)
 Bachelor of Science, **Computer Science**
